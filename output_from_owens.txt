@@ -1,0 +1,388 @@
+Start sequential:
+Error: ("'NoneType' object is not iterable",) when getting data for 1925
+Error: ("'NoneType' object is not iterable",) when getting data for 1926
+Error: ("'NoneType' object is not iterable",) when getting data for 1927
+Error: ("'NoneType' object is not iterable",) when getting data for 1928
+Error: ("'NoneType' object is not iterable",) when getting data for 1929
+Error: ("'NoneType' object is not iterable",) when getting data for 1930
+Error: ("'NoneType' object is not iterable",) when getting data for 1931
+Error: ("'NoneType' object is not iterable",) when getting data for 1932
+Error: ("'NoneType' object is not iterable",) when getting data for 1933
+Error: ("'NoneType' object is not iterable",) when getting data for 1934
+
+Time to receive and average temp data sequentially: 8.438287258148193
+
+Start parallel:
+[P0] evaluation routine starts
+[P1] evaluation routine starts
+[P2] evaluation routine starts
+[P3] evaluation routine starts
+[P4] evaluation routine starts
+[P5] evaluation routine starts
+[P6] evaluation routine starts
+[P7] evaluation routine starts
+[P8] evaluation routine starts
+[P9] evaluation routine starts
+[P10] evaluation routine starts
+[P11] evaluation routine starts
+[P12] evaluation routine starts
+[P13] evaluation routine starts
+[P14] evaluation routine starts
+[P15] evaluation routine starts
+[P16] evaluation routine starts
+[P17] evaluation routine starts
+[P18] evaluation routine starts
+[P19] evaluation routine starts
+[P20] evaluation routine starts
+[P21] evaluation routine starts
+[P22] evaluation routine starts
+[P23] evaluation routine starts
+[P24] evaluation routine starts
+[P25] evaluation routine starts
+[P26] evaluation routine starts
+[P27] evaluation routine starts
+[P4] was tasked with getting and averaging temp data for 1924
+[P4] calculated data: ({'1924': 3.6350282485875693}, {'1924': 12.684269662921347})
+Result: ({'1924': 3.6350282485875693}, {'1924': 12.684269662921347})
+Error: ("'NoneType' object is not iterable",) when getting data for 1926
+[P6] was tasked with getting and averaging temp data for 1926
+[P6] calculated data: ({}, {})
+Result: ({}, {})
+Error: ("'NoneType' object is not iterable",) when getting data for 1934
+[P14] was tasked with getting and averaging temp data for 1934
+[P14] calculated data: ({}, {})
+Result: ({}, {})
+[P1] was tasked with getting and averaging temp data for 1921
+[P1] calculated data: ({'1921': 8.143016759776536}, {'1921': 19.57339743589743})
+Result: ({'1921': 8.143016759776536}, {'1921': 19.57339743589743})
+[P18] was tasked with getting and averaging temp data for 1938
+[P18] calculated data: ({'1938': 7.459663865546219}, {'1938': 17.46768802228412})
+Result: ({'1938': 7.459663865546219}, {'1938': 17.46768802228412})
+Error: ("'NoneType' object is not iterable",) when getting data for 1929
+[P10] was tasked with getting and averaging temp data for 1929
+[P10] calculated data: ({}, {})
+Result: ({}, {})
+Error: ("'NoneType' object is not iterable",) when getting data for 1928
+[P8] was tasked with getting and averaging temp data for 1928
+[P8] calculated data: ({}, {})
+Result: ({}, {})
+[P0] was tasked with getting and averaging temp data for 1920
+[P0] calculated data: ({'1920': 6.986197183098591}, {'1920': 15.78342857142856})
+Error: ("'NoneType' object is not iterable",) when getting data for 1925
+[P5] was tasked with getting and averaging temp data for 1925
+[P5] calculated data: ({}, {})
+Result: ({'1920': 6.986197183098591}, {'1920': 15.78342857142856})
+[P21] was tasked with getting and averaging temp data for 1941
+[P21] calculated data: ({'1941': 6.990502793296087}, {'1941': 17.383933518005552})
+Result: ({}, {})
+Result: ({'1941': 6.990502793296087}, {'1941': 17.383933518005552})
+[P27] was tasked with getting and averaging temp data for 1942
+[P27] calculated data: ({'1942': 7.105915492957743}, {'1942': 16.62637362637362})
+Result: ({'1942': 7.105915492957743}, {'1942': 16.62637362637362})
+Error: ("'NoneType' object is not iterable",) when getting data for 1932
+[P9] was tasked with getting and averaging temp data for 1932
+[P9] calculated data: ({}, {})
+Result: ({}, {})
+[P17] was tasked with getting and averaging temp data for 1937
+[P17] calculated data: ({'1937': 7.361235955056186}, {'1937': 16.821329639889203})
+Result: ({'1937': 7.361235955056186}, {'1937': 16.821329639889203})
+[P22] was tasked with getting and averaging temp data for 1946
+[P22] calculated data: ({'1946': 7.317403314917119}, {'1946': 17.968681318681323})
+Result: ({'1946': 7.317403314917119}, {'1946': 17.968681318681323})
+Error: ("'NoneType' object is not iterable",) when getting data for 1931
+[P12] was tasked with getting and averaging temp data for 1931
+[P12] calculated data: ({}, {})
+Result: ({}, {})
+[P24] was tasked with getting and averaging temp data for 1944
+[P24] calculated data: ({'1944': 6.844662921348327}, {'1944': 17.027472527472543})
+[P3] was tasked with getting and averaging temp data for 1923
+[P3] calculated data: ({'1923': 7.060169491525419}, {'1923': 16.364917127071813})
+Result: ({'1944': 6.844662921348327}, {'1944': 17.027472527472543})
+Result: ({'1923': 7.060169491525419}, {'1923': 16.364917127071813})
+Error: ("'NoneType' object is not iterable",) when getting data for 1930
+[P11] was tasked with getting and averaging temp data for 1930
+[P11] calculated data: ({}, {})
+[P15] was tasked with getting and averaging temp data for 1947
+[P15] calculated data: ({'1947': 7.095114942528736}, {'1947': 16.794780219780222})
+Result: ({}, {})
+[P19] was tasked with getting and averaging temp data for 1939
+[P19] calculated data: ({'1939': 7.339830508474582}, {'1939': 16.937741046831956})
+Result: ({'1947': 7.095114942528736}, {'1947': 16.794780219780222})
+Result: ({'1939': 7.339830508474582}, {'1939': 16.937741046831956})
+[P16] was tasked with getting and averaging temp data for 1936
+[P16] calculated data: ({'1936': 6.5268698060941865}, {'1936': 16.254520547945194})
+Result: ({'1936': 6.5268698060941865}, {'1936': 16.254520547945194})
+Error: ("'NoneType' object is not iterable",) when getting data for 1927
+[P7] was tasked with getting and averaging temp data for 1927
+[P7] calculated data: ({}, {})
+Result: ({}, {})
+[P2] was tasked with getting and averaging temp data for 1922
+[P2] calculated data: ({'1922': 7.515730337078655}, {'1922': 16.31349862258953})
+Result: ({'1922': 7.515730337078655}, {'1922': 16.31349862258953})
+[P23] was tasked with getting and averaging temp data for 1943
+[P23] calculated data: ({'1943': 6.413352272727263}, {'1943': 16.66878453038674})
+[P26] was tasked with getting and averaging temp data for 1935
+[P26] calculated data: ({'1935': 8.895681063122915}, {'1935': 18.695065789473688})
+Result: ({'1943': 6.413352272727263}, {'1943': 16.66878453038674})
+Result: ({'1935': 8.895681063122915}, {'1935': 18.695065789473688})
+[P20] was tasked with getting and averaging temp data for 1940
+[P20] calculated data: ({'1940': 5.6666666666666705}, {'1940': 15.281944444444457})
+Result: ({'1940': 5.6666666666666705}, {'1940': 15.281944444444457})
+Error: ("'NoneType' object is not iterable",) when getting data for 1933
+[P13] was tasked with getting and averaging temp data for 1933
+[P13] calculated data: ({}, {})
+Result: ({}, {})
+[P25] was tasked with getting and averaging temp data for 1945
+[P25] calculated data: ({'1945': 6.8511173184357546}, {'1945': 17.089444444444442})
+Result: ({'1945': 6.8511173184357546}, {'1945': 17.089444444444442})
+[P10] was tasked with getting and averaging temp data for 1953
+[P10] calculated data: ({'1953': 8.640730337078654}, {'1953': 18.198351648351643})
+Result: ({'1953': 8.640730337078654}, {'1953': 18.198351648351643})
+[P17] was tasked with getting and averaging temp data for 1960
+[P17] calculated data: ({'1960': 7.511634349030467}, {'1960': 17.001912568306004})
+Result: ({'1960': 7.511634349030467}, {'1960': 17.001912568306004})
+[P4] was tasked with getting and averaging temp data for 1948
+[P4] calculated data: ({'1948': 6.872500000000005}, {'1948': 16.891712707182325})
+[P22] was tasked with getting and averaging temp data for 1961
+[P22] calculated data: ({'1961': 8.145915492957743}, {'1961': 17.067217630853992})
+Result: ({'1948': 6.872500000000005}, {'1948': 16.891712707182325})
+Result: ({'1961': 8.145915492957743}, {'1961': 17.067217630853992})
+[P0] was tasked with getting and averaging temp data for 1955
+[P0] calculated data: ({'1955': 7.722499999999995}, {'1955': 17.220661157024793})
+Result: ({'1955': 7.722499999999995}, {'1955': 17.220661157024793})
+[P5] was tasked with getting and averaging temp data for 1956
+[P5] calculated data: ({'1956': 7.319943820224717}, {'1956': 16.507438016528923})
+Result: ({'1956': 7.319943820224717}, {'1956': 16.507438016528923})
+[P15] was tasked with getting and averaging temp data for 1966
+[P1] was tasked with getting and averaging temp data for 1951
+[P15] calculated data: ({'1966': 7.7683333333333255}, {'1966': 17.127747252747255})
+[P1] calculated data: ({'1951': 7.68272980501392}, {'1951': 17.51325966850826})
+Result: ({'1951': 7.68272980501392}, {'1951': 17.51325966850826})
+Result: ({'1966': 7.7683333333333255}, {'1966': 17.127747252747255})
+[P24] was tasked with getting and averaging temp data for 1963
+[P24] calculated data: ({'1963': 7.333053221288517}, {'1963': 16.892520775623254})
+Result: ({'1963': 7.333053221288517}, {'1963': 16.892520775623254})
+[P27] was tasked with getting and averaging temp data for 1958
+[P27] calculated data: ({'1958': 7.153932584269659}, {'1958': 16.16805555555556})
+Result: ({'1958': 7.153932584269659}, {'1958': 16.16805555555556})
+[P19] was tasked with getting and averaging temp data for 1967
+[P19] calculated data: ({'1967': 7.214484679665734}, {'1967': 16.115702479338847})
+[P3] was tasked with getting and averaging temp data for 1964
+[P3] calculated data: ({'1964': 7.970391061452512}, {'1964': 17.3586301369863})
+Result: ({'1967': 7.214484679665734}, {'1967': 16.115702479338847})
+Result: ({'1964': 7.970391061452512}, {'1964': 17.3586301369863})
+[P6] was tasked with getting and averaging temp data for 1949
+[P6] calculated data: ({'1949': 8.378370786516857}, {'1949': 18.713461538461544})
+Result: ({'1949': 8.378370786516857}, {'1949': 18.713461538461544})
+[P14] was tasked with getting and averaging temp data for 1950
+[P14] calculated data: ({'1950': 7.065915492957748}, {'1950': 16.826315789473664})
+Result: ({'1950': 7.065915492957748}, {'1950': 16.826315789473664})
+[P13] was tasked with getting and averaging temp data for 1974
+[P13] calculated data: ({'1974': 8.424233983286912}, {'1974': 17.622437673130182})
+Result: ({'1974': 8.424233983286912}, {'1974': 17.622437673130182})
+[P26] was tasked with getting and averaging temp data for 1972
+[P26] calculated data: ({'1972': 8.337960339943336}, {'1972': 16.747397260273967})
+[P7] was tasked with getting and averaging temp data for 1969
+[P7] calculated data: ({'1969': 8.056666666666665}, {'1969': 16.683656509695282})
+Result: ({'1972': 8.337960339943336}, {'1972': 16.747397260273967})
+Result: ({'1969': 8.056666666666665}, {'1969': 16.683656509695282})
+[P20] was tasked with getting and averaging temp data for 1973
+[P20] calculated data: ({'1973': 9.782681564245806}, {'1973': 18.40192307692309})
+Result: ({'1973': 9.782681564245806}, {'1973': 18.40192307692309})
+[P9] was tasked with getting and averaging temp data for 1959
+[P9] calculated data: ({'1959': 8.315449438202252}, {'1959': 17.97988980716255})
+Result: ({'1959': 8.315449438202252}, {'1959': 17.97988980716255})
+[P8] was tasked with getting and averaging temp data for 1954
+[P8] calculated data: ({'1954': 7.616759776536317}, {'1954': 17.226575342465754})
+Result: ({'1954': 7.616759776536317}, {'1954': 17.226575342465754})
+[P18] was tasked with getting and averaging temp data for 1952
+[P18] calculated data: ({'1952': 8.121067415730336}, {'1952': 17.45643835616439})
+Result: ({'1952': 8.121067415730336}, {'1952': 17.45643835616439})
+[P16] was tasked with getting and averaging temp data for 1968
+[P16] calculated data: ({'1968': 7.694707520891365}, {'1968': 16.998626373626376})
+Result: ({'1968': 7.694707520891365}, {'1968': 16.998626373626376})
+[P21] was tasked with getting and averaging temp data for 1957
+[P21] calculated data: ({'1957': 8.005322128851539}, {'1957': 17.867955801104966})
+Result: ({'1957': 8.005322128851539}, {'1957': 17.867955801104966})
+[P2] was tasked with getting and averaging temp data for 1970
+[P2] calculated data: ({'1970': 8.338655462184878}, {'1970': 16.846703296703293})
+Result: ({'1970': 8.338655462184878}, {'1970': 16.846703296703293})
+[P25] was tasked with getting and averaging temp data for 1975
+[P25] calculated data: ({'1975': 8.69014084507041}, {'1975': 17.160989010989024})
+Result: ({'1975': 8.69014084507041}, {'1975': 17.160989010989024})
+[P12] was tasked with getting and averaging temp data for 1962
+[P12] calculated data: ({'1962': 7.307303370786512}, {'1962': 16.611173184357554})
+Result: ({'1962': 7.307303370786512}, {'1962': 16.611173184357554})
+[P23] was tasked with getting and averaging temp data for 1971
+[P23] calculated data: ({'1971': 8.991412742382277}, {'1971': 17.47823691460056})
+Result: ({'1971': 8.991412742382277}, {'1971': 17.47823691460056})
+[P11] was tasked with getting and averaging temp data for 1965
+[P11] calculated data: ({'1965': 7.544444444444441}, {'1965': 17.031111111111112})
+Result: ({'1965': 7.544444444444441}, {'1965': 17.031111111111112})
+[P10] was tasked with getting and averaging temp data for 1976
+[P10] calculated data: ({'1976': 7.059999999999997}, {'1976': 16.718508287292806})
+[P4] was tasked with getting and averaging temp data for 1978
+[P4] calculated data: ({'1978': 7.4127071823204425}, {'1978': 16.629577464788728})
+Result: ({'1976': 7.059999999999997}, {'1976': 16.718508287292806})
+Result: ({'1978': 7.4127071823204425}, {'1978': 16.629577464788728})
+[P1] was tasked with getting and averaging temp data for 1982
+[P1] calculated data: ({'1982': 7.752247191011238}, {'1982': 17.190384615384605})
+Result: ({'1982': 7.752247191011238}, {'1982': 17.190384615384605})
+[P15] was tasked with getting and averaging temp data for 1983
+[P15] calculated data: ({'1983': 8.888300835654599}, {'1983': 17.950276243093914})
+Result: ({'1983': 8.888300835654599}, {'1983': 17.950276243093914})
+[P22] was tasked with getting and averaging temp data for 1979
+[P22] calculated data: ({'1979': 8.733333333333341}, {'1979': 17.221823204419895})
+[P0] was tasked with getting and averaging temp data for 1980
+[P0] calculated data: ({'1980': 7.744999999999995}, {'1980': 17.177562326869808})
+Result: ({'1979': 8.733333333333341}, {'1979': 17.221823204419895})
+Result: ({'1980': 7.744999999999995}, {'1980': 17.177562326869808})
+[P3] was tasked with getting and averaging temp data for 1987
+[P3] calculated data: ({'1987': 8.552824858757065}, {'1987': 17.87527472527473})
+Result: ({'1987': 8.552824858757065}, {'1987': 17.87527472527473})
+[P19] was tasked with getting and averaging temp data for 1986
+[P19] calculated data: ({'1986': 8.304722222222217}, {'1986': 17.717582417582417})
+Result: ({'1986': 8.304722222222217}, {'1986': 17.717582417582417})
+[P14] was tasked with getting and averaging temp data for 1989
+[P14] calculated data: ({'1989': 8.110249307479226}, {'1989': 17.526038781163432})
+Result: ({'1989': 8.110249307479226}, {'1989': 17.526038781163432})
+[P24] was tasked with getting and averaging temp data for 1984
+[P24] calculated data: ({'1984': 8.647075208913646}, {'1984': 17.462534435261727})
+[P6] was tasked with getting and averaging temp data for 1988
+[P6] calculated data: ({'1988': 8.136944444444437}, {'1988': 17.61041095890411})
+Result: ({'1984': 8.647075208913646}, {'1984': 17.462534435261727})
+Result: ({'1988': 8.136944444444437}, {'1988': 17.61041095890411})
+[P8] was tasked with getting and averaging temp data for 1995
+[P8] calculated data: ({'1995': 8.688068181818183}, {'1995': 17.938781163434907})
+Result: ({'1995': 8.688068181818183}, {'1995': 17.938781163434907})
+[P13] was tasked with getting and averaging temp data for 1990
+[P13] calculated data: ({'1990': 9.648870056497174}, {'1990': 19.184890109890127})
+Result: ({'1990': 9.648870056497174}, {'1990': 19.184890109890127})
+[P2] was tasked with getting and averaging temp data for 1999
+[P2] calculated data: ({'1999': 9.003351955307261}, {'1999': 18.36263736263736})
+Result: ({'1999': 9.003351955307261}, {'1999': 18.36263736263736})
+[P9] was tasked with getting and averaging temp data for 1994
+[P9] calculated data: ({'1994': 8.690833333333332}, {'1994': 18.658126721763075})
+[P21] was tasked with getting and averaging temp data for 1998
+[P21] calculated data: ({'1998': 9.847323943661971}, {'1998': 18.656198347107434})
+Result: ({'1994': 8.690833333333332}, {'1994': 18.658126721763075})
+[P5] was tasked with getting and averaging temp data for 1981
+[P5] calculated data: ({'1981': 7.80524861878453}, {'1981': 17.1236914600551})
+Result: ({'1998': 9.847323943661971}, {'1998': 18.656198347107434})
+Result: ({'1981': 7.80524861878453}, {'1981': 17.1236914600551})
+[P5] evaluation routine quits
+[P26] was tasked with getting and averaging temp data for 1991
+[P26] calculated data: ({'1991': 9.056509695290863}, {'1991': 18.795890410958908})
+Result: ({'1991': 9.056509695290863}, {'1991': 18.795890410958908})
+[P26] evaluation routine quits
+[P20] was tasked with getting and averaging temp data for 1993
+[P20] calculated data: ({'1993': 9.018384401114204}, {'1993': 18.687292817679552})
+Result: ({'1993': 9.018384401114204}, {'1993': 18.687292817679552})
+[P20] evaluation routine quits
+[P11] was tasked with getting and averaging temp data for 2003
+[P11] calculated data: ({'2003': 7.89277777777778}, {'2003': 16.590807799442917})
+[P23] was tasked with getting and averaging temp data for 2002
+[P23] calculated data: ({'2002': 9.148324022346367}, {'2002': 18.384022038567466})
+[P25] was tasked with getting and averaging temp data for 2000
+[P25] calculated data: ({'2000': 7.983471074380159}, {'2000': 17.175208913649026})
+[P23] evaluation routine quits
+[P18] was tasked with getting and averaging temp data for 1996
+[P18] calculated data: ({'1996': 7.853954802259895}, {'1996': 16.652908587257624})
+[P11] evaluation routine quits
+Result: ({'2002': 9.148324022346367}, {'2002': 18.384022038567466})
+Result: ({'2003': 7.89277777777778}, {'2003': 16.590807799442917})
+[P25] evaluation routine quits
+[P18] evaluation routine quits
+[P17] was tasked with getting and averaging temp data for 1977
+[P17] calculated data: ({'1977': 7.892156862745096}, {'1977': 16.829916897506923})
+Result: ({'1996': 7.853954802259895}, {'1996': 16.652908587257624})
+[P12] was tasked with getting and averaging temp data for 2001
+[P12] calculated data: ({'2001': 8.903072625698327}, {'2001': 18.285359116022086})
+[P7] was tasked with getting and averaging temp data for 1992
+[P7] calculated data: ({'1992': 8.485875706214685}, {'1992': 17.274863387978137})
+Result: ({'2000': 7.983471074380159}, {'2000': 17.175208913649026})
+[P17] evaluation routine quits
+[P12] evaluation routine quits
+Result: ({'1977': 7.892156862745096}, {'1977': 16.829916897506923})
+[P27] was tasked with getting and averaging temp data for 1985
+[P27] calculated data: ({'1985': 8.380440771349868}, {'1985': 17.53749999999999})
+[P16] was tasked with getting and averaging temp data for 1997
+[P16] calculated data: ({'1997': 7.765722379603396}, {'1997': 17.0793956043956})
+[P27] evaluation routine quits
+[P7] evaluation routine quits
+[P16] evaluation routine quits
+Result: ({'2001': 8.903072625698327}, {'2001': 18.285359116022086})
+Result: ({'1992': 8.485875706214685}, {'1992': 17.274863387978137})
+Result: ({'1985': 8.380440771349868}, {'1985': 17.53749999999999})
+Result: ({'1997': 7.765722379603396}, {'1997': 17.0793956043956})
+[P24] was tasked with getting and averaging temp data for 2013
+[P24] calculated data: ({'2013': 8.60700280112044}, {'2013': 17.825277777777785})
+[P0] was tasked with getting and averaging temp data for 2009
+[P0] calculated data: ({'2009': 8.169806094182828}, {'2009': 17.118508287292812})
+[P24] evaluation routine quits
+Result: ({'2013': 8.60700280112044}, {'2013': 17.825277777777785})
+[P0] evaluation routine quits
+[P15] was tasked with getting and averaging temp data for 2007
+[P15] calculated data: ({'2007': 8.394150417827296}, {'2007': 17.680716253443528})
+Result: ({'2009': 8.169806094182828}, {'2009': 17.118508287292812})
+Result: ({'2007': 8.394150417827296}, {'2007': 17.680716253443528})
+[P4] was tasked with getting and averaging temp data for 2005
+[P15] evaluation routine quits
+[P4] calculated data: ({'2005': 8.75170454545455}, {'2005': 17.771270718232035})
+[P6] was tasked with getting and averaging temp data for 2014
+[P6] calculated data: ({'2014': 7.841620111731843}, {'2014': 17.070798898071633})
+[P1] was tasked with getting and averaging temp data for 2006
+[P1] calculated data: ({'2006': 9.515819209039547}, {'2006': 18.688461538461546})
+[P4] evaluation routine quits
+Result: ({'2005': 8.75170454545455}, {'2005': 17.771270718232035})
+Result: ({'2014': 7.841620111731843}, {'2014': 17.070798898071633})
+[P1] evaluation routine quits
+[P14] was tasked with getting and averaging temp data for 2012
+[P14] calculated data: ({'2012': 10.002513966480443}, {'2012': 19.03342465753423})
+Result: ({'2006': 9.515819209039547}, {'2006': 18.688461538461546})
+[P22] was tasked with getting and averaging temp data for 2008
+[P22] calculated data: ({'2008': 8.593484419263453}, {'2008': 17.838356164383555})
+[P13] was tasked with getting and averaging temp data for 2016
+[P13] calculated data: ({'2016': 9.392997198879556}, {'2016': 18.940821917808222})
+[P22] evaluation routine quits
+[P6] evaluation routine quits
+[P2] was tasked with getting and averaging temp data for 2017
+[P2] calculated data: ({'2017': 9.368644067796614}, {'2017': 18.38694444444444})
+[P13] evaluation routine quits
+[P14] evaluation routine quits
+[P2] evaluation routine quits
+Result: ({'2012': 10.002513966480443}, {'2012': 19.03342465753423})
+[P19] was tasked with getting and averaging temp data for 2011
+[P19] calculated data: ({'2011': 9.709577464788726}, {'2011': 18.867768595041316})
+Result: ({'2008': 8.593484419263453}, {'2008': 17.838356164383555})
+[P19] evaluation routine quits
+[P9] was tasked with getting and averaging temp data for 2018
+[P9] calculated data: ({'2018': 9.217897727272723}, {'2018': 17.8228650137741})
+Result: ({'2017': 9.368644067796614}, {'2017': 18.38694444444444})
+[P9] evaluation routine quits
+Result: ({'2016': 9.392997198879556}, {'2016': 18.940821917808222})
+[P10] was tasked with getting and averaging temp data for 2004
+[P10] calculated data: ({'2004': 8.148333333333328}, {'2004': 17.05424657534246})
+[P21] was tasked with getting and averaging temp data for 2019
+[P21] calculated data: ({'2019': 9.042372881355938}, {'2019': 17.843801652892562})
+[P21] evaluation routine quits
+[P3] was tasked with getting and averaging temp data for 2010
+[P3] calculated data: ({'2010': 9.253296703296707}, {'2010': 18.96833333333333})
+[P10] evaluation routine quits
+[P3] evaluation routine quits
+Result: ({'2011': 9.709577464788726}, {'2011': 18.867768595041316})
+Result: ({'2018': 9.217897727272723}, {'2018': 17.8228650137741})
+Result: ({'2019': 9.042372881355938}, {'2019': 17.843801652892562})
+Result: ({'2004': 8.148333333333328}, {'2004': 17.05424657534246})
+Result: ({'2010': 9.253296703296707}, {'2010': 18.96833333333333})
+[P8] was tasked with getting and averaging temp data for 2015
+[P8] calculated data: ({'2015': 8.723480662983423}, {'2015': 18.512983425414347})
+[P8] evaluation routine quits
+Result: ({'2015': 8.723480662983423}, {'2015': 18.512983425414347})
+
+Time to receive and average temp data in parallel: 0.4830152988433838
+
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/pbstmp.12241989/runtime-poolejd'
+
+Predicted avg. min. temp for 2020 = 9.20602820050231 C
+Predicted avg. max. temp for 2020 = 18.208843889210943 C
