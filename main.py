@@ -1,7 +1,6 @@
 import multiprocessing
 import os
 import requests
-import math
 import json
 from time import time
 from time import sleep
@@ -16,18 +15,16 @@ END_YEAR = 2020  # change to 2020 when done testing
 TOTAL_YEARS = END_YEAR - START_YEAR
 
 
-def get_data(start_year, num_years):
+# gets daily data for 'year' and averages
+def get_daily_data_and_avg(year):
     # containers to store per year avg min/max temps
-    yearly_min_avgs = {}
-    yearly_max_avgs = {}
+    yearly_min_avg = {}
+    yearly_max_avg = {}
 
-    # query weather data API for daily temp data for 'num_years' starting with 'start_year'
-    # queries must made in year chunks because of API request limit
-    i = start_year
-    while i < start_year + num_years and i < END_YEAR:
+    while True:
         # initialize data for request
-        start = f'{i}-01-01'
-        end = f'{i}-12-31'
+        start = f'{year}-01-01'
+        end = f'{year}-12-31'
         headers = {'x-api-key': API_KEY}
         ploads = {'station': STATION_ID, 'start': start, 'end': end}
 
@@ -66,39 +63,37 @@ def get_data(start_year, num_years):
             num_good_max = len(data) - num_missing_max_values
             if num_good_min > 0:
                 yearly_avg_min_temp = daily_min_temps_sum / (len(data) - num_missing_min_values)
-                yearly_min_avgs[f'{i}'] = yearly_avg_min_temp
+                yearly_min_avg[f'{year}'] = yearly_avg_min_temp
             if num_good_max > 0:
                 yearly_avg_max_temp = daily_max_temps_sum / (len(data) - num_missing_max_values)
-                yearly_max_avgs[f'{i}'] = yearly_avg_max_temp
+                yearly_max_avg[f'{year}'] = yearly_avg_max_temp
 
         # catch errors
         except ZeroDivisionError as e:
-            print(f'Error: {e.args} when getting data for {i}')
+            print(f'Error: {e.args} when getting data for {year}')
         except TypeError as e:
-            print(f'Error: {e.args} when getting data for {i}')
+            print(f'Error: {e.args} when getting data for {year}')
         except json.decoder.JSONDecodeError as e:
-            print(f'Error: {e.args} when getting data for {i}')
-
-        # increment current year to query
-        i += 1
+            print(f'Error: {e.args} when getting data for {year}')
+        break
 
     # return yearly avg temp data
-    return [yearly_min_avgs, yearly_max_avgs]
+    return yearly_min_avg, yearly_max_avg
 
 
 # generate list of 'start_year's to pass to processes
-def generate_task_list(num_years):
+def generate_task_list():
     start_year = START_YEAR
     task_list = []
     while start_year < END_YEAR:
         task_list.append(start_year)
-        start_year += num_years
+        start_year += 1
 
     return task_list
 
 
 # for assigning tasks to processes
-def worker(process_name, tasks, results, num_years):
+def worker(process_name, tasks, results):
     print(f'[{process_name}] evaluation routine starts')
 
     while True:
@@ -113,10 +108,10 @@ def worker(process_name, tasks, results, num_years):
             break
         else:
             # get temp data for task
-            result = get_data(new_value, num_years)
+            result = get_daily_data_and_avg(new_value)
 
             # output processes results
-            print(f'[{process_name}] was tasked with getting and averaging temp data for {new_value}-{new_value+num_years-1}')
+            print(f'[{process_name}] was tasked with getting and averaging temp data for {new_value}')
             print(f'[{process_name}] calculated data: {result}')
 
             # return temp data
@@ -125,13 +120,12 @@ def worker(process_name, tasks, results, num_years):
     return
 
 
-def parallel_data_parallel():
-    # calculate number of processes based on cpus
+def get_data_parallel():
+    # calculate number of processes based on number of cores
     num_workers = os.cpu_count()
 
-    # calculate number of years for each process to query based on # total years to query and # available workers
-    num_years = math.ceil(TOTAL_YEARS / num_workers)
-    task_list = generate_task_list(num_years)
+    # generate task list for workers
+    task_list = generate_task_list()
 
     # create queues for task assignment and result return
     manager = multiprocessing.Manager()
@@ -144,7 +138,7 @@ def parallel_data_parallel():
     for i in range(num_workers):
         process_name = f'P{i}'
 
-        new_process = multiprocessing.Process(target=worker, args=(process_name, tasks, results, num_years))
+        new_process = multiprocessing.Process(target=worker, args=(process_name, tasks, results))
 
         processes.append(new_process)
 
@@ -225,13 +219,14 @@ def plot_temp_data(min_temp_data, max_temp_data):
 if __name__ == '__main__':
     print('Start sequential:')
     start = time()
-    get_data(START_YEAR, TOTAL_YEARS)
+    for i in range(START_YEAR, END_YEAR):
+        get_daily_data_and_avg(i)
     end = time()
     print(f'\nTime to receive and average temp data sequentially: {end - start}\n')
 
     print('Start parallel:')
     start = time()
-    min_temps, max_temps = parallel_data_parallel()
+    min_temps, max_temps = get_data_parallel()
     end = time()
     print(f'\nTime to receive and average temp data in parallel: {end-start}\n')
 
