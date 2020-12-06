@@ -218,16 +218,16 @@ def plot_temp_data(min_temp_data, max_temp_data):
 
 if __name__ == '__main__':
     print('Start sequential:')
-    start = time()
+    start_timer = time()
     for i in range(START_YEAR, END_YEAR):
         get_daily_data_and_avg(i)
-    end = time()
-    print(f'\nTime to receive and average temp data sequentially: {end - start}\n')
+    stop_timer = time()
+    print(f'\nTime to receive and average temp data sequentially: {stop_timer - start_timer}\n')
 
     print('Start parallel:')
-    start = time()
+    start_timer = time()
     min_temps, max_temps = get_data_parallel()
-    end = time()
-    print(f'\nTime to receive and average temp data in parallel: {end-start}\n')
+    stop_timer = time()
+    print(f'\nTime to receive and average temp data in parallel: {stop_timer-start_timer}\n')
 
     plot_temp_data(min_temps, max_temps)
