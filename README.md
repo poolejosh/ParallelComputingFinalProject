@@ -17,4 +17,4 @@ My parallel implementation showed significant time run time improvement over seq
 
 The acutal results of my climate forcaster can be seen in [temp_data.png](temp_data.png).
 
-Please see my [report](report/Final_Project_sReport.pdf) for a more in depth write up.
+Please see my [report](report/Final_Project_Report.pdf) for a more in depth write up.
